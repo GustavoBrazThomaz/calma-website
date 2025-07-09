@@ -1,14 +1,17 @@
-import { Users } from "lucide-react";
+import { ReactNode } from "react";
 
-export function BenefitCard() {
+interface Props {
+  icon: ReactNode;
+  title: string;
+  description: string;
+}
+
+export function BenefitCard({ icon, description, title }: Props) {
   return (
-    <div className="max-w-xs space-y-4 flex flex-col justify-center items-center">
-      <Users className="size-12"/>
-      <p className="text-xl font-bold">Organização Total</p>
-      <p className="text-sm">
-        Mantenha todos os dados dos seus pacientes organizados e seguros em um
-        só lugar.
-      </p>
+    <div className="max-w-xs space-y-4 flex flex-col justify-center items-center text-center">
+      {icon}
+      <p className="text-xl font-[600]  font-serif">{title}</p>
+      <p className="text-sm text-gray-500">{description}</p>
     </div>
   );
 }

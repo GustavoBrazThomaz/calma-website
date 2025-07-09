@@ -8,7 +8,7 @@ export function Notebook() {
           layout="fill"
           src={"/assets/calma-dashboard.png"}
           alt="calma-dashboard"
-          className="rounded-t-xl"
+          className="rounded-t-xl pointer-events-none"
         />
       </div>
     </div>
