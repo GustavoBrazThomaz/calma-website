@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "motion/react";
-import { Notebook } from "../components";
+import { motion } from "framer-motion";
+import MacBook from "../components/mac-book";
 
 export function MainSection() {
   return (
@@ -26,7 +26,7 @@ export function MainSection() {
         </motion.h2>
       </div>
       <div className="relative w-full flex justify-center">
-        <Notebook />
+        <MacBook />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

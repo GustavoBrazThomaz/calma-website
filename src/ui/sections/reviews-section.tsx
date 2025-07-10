@@ -1,4 +1,4 @@
-import { ReviewsCard } from "../components";
+import { ReviewsCard } from "../components/reviews-card";
 
 const reviews = [
   {

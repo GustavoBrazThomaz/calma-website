@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
-export function Notebook() {
+export default function MacBook() {
   return (
     <motion.div
       initial={{ opacity: 0 }}

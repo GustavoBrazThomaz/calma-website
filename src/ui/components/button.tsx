@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 interface Props {
   children: ReactNode;

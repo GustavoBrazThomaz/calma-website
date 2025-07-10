@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 
-export function Divider(className: { className?: string }) {
+export function SectionDivider(className: { className?: string }) {
   return (
     <div className="w-full flex justify-center">
       <div

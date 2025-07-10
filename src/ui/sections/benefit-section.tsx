@@ -1,7 +1,7 @@
 "use client";
 import { Clock, Shield, Users } from "lucide-react";
 import { BenefitCard } from "../components/benefit-card";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { fadeIn } from "../animations";
 
 const benefits = [

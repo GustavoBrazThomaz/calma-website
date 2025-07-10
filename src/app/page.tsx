@@ -1,6 +1,11 @@
-import { MainSection, BenefitSection, ResourceSection, Reviews, ReadySection, Footer } from "@/ui/sections";
-import { AppBar, Divider } from "@/ui/components";
-
+import { AppBar } from "@/ui/components/app-bar";
+import { SectionDivider } from "@/ui/components/section-divider";
+import { BenefitSection } from "@/ui/sections/benefit-section";
+import { Footer } from "@/ui/sections/footer";
+import { MainSection } from "@/ui/sections/main-section";
+import { ReadySection } from "@/ui/sections/ready-section";
+import { ResourceSection } from "@/ui/sections/resource-section";
+import { Reviews } from "@/ui/sections/reviews-section";
 
 export default function Home() {
   return (
@@ -8,11 +13,11 @@ export default function Home() {
       <div className="px-8 py-4">
         <AppBar />
         <MainSection />
-        <Divider />
+        <SectionDivider />
         <BenefitSection />
-        <Divider />
+        <SectionDivider />
         <ResourceSection />
-        <Divider />
+        <SectionDivider />
         <Reviews />
       </div>
       <ReadySection />

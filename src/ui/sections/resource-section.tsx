@@ -1,9 +1,10 @@
 "use client";
 import { Check } from "lucide-react";
 import Image from "next/image";
-import { Divider } from "../components";
-import { motion } from "motion/react";
+
+import { motion } from "framer-motion";
 import { fadeInLeftToRight, fadeInRightToLeft } from "../animations";
+import { SectionDivider } from "../components/section-divider";
 
 export function ResourceSection() {
   return (
@@ -54,11 +55,10 @@ export function ResourceSection() {
           />
         </motion.div>
       </div>
-      <Divider />
+      <SectionDivider />
       <div className="flex space-y-4 justify-center gap-48 w-full -mt-24">
         <motion.div
           {...fadeInLeftToRight}
-
           className="size-96 relative -top-12 p-6 bg-orange-300 rounded-4xl"
         >
           <Image
