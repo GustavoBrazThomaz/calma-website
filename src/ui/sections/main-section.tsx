@@ -1,4 +1,4 @@
-import { Notebook } from "../components/notebook";
+import { Notebook } from "../components";
 
 export function MainSection() {
   return (

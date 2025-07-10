@@ -1,11 +1,6 @@
-import { AppBar } from "@/ui/components/app-bar";
-import { Divider } from "@/ui/components/divider";
-import { BenefitSection } from "@/ui/sections/benefit-section";
-import { Reviews } from "@/ui/sections/reviews-section";
-import { MainSection } from "@/ui/sections/main-section";
-import { ResourceSection } from "@/ui/sections/resource-section";
-import { ReadySection } from "@/ui/sections/ready-section";
-import { Footer } from "@/ui/components/footer";
+import { MainSection, BenefitSection, ResourceSection, Reviews, ReadySection, Footer } from "@/ui/sections";
+import { AppBar, Divider } from "@/ui/components";
+
 
 export default function Home() {
   return (

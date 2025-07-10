@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "../components/button";
+import { Button } from "../components";
 
 export function ReadySection() {
   return (
@@ -10,7 +10,12 @@ export function ReadySection() {
           Junte-se a centenas de psicólogos que já transformaram sua prática
         </h2>
       </div>
-      <Button className="max-w-sm" onClick={() => console.log("teste")}>
+      <Button
+        className="max-w-sm"
+        onClick={() =>
+          (window.location.href = "https://calma-seven.vercel.app/")
+        }
+      >
         Começar teste gratuito
       </Button>
     </section>

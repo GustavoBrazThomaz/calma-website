@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 import Image from "next/image";
-import { Divider } from "../components/divider";
+import { Divider } from "../components";
 
 export function ResourceSection() {
   return (

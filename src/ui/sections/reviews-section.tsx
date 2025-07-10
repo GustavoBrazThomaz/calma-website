@@ -1,4 +1,25 @@
-import { ReviewsCard } from "../components/reviews-card";
+import { ReviewsCard } from "../components";
+
+const reviews = [
+  {
+    review:
+      "Revolucionou completamente minha prática. A simplicidade é impressionante.",
+    name: "Dra. Maria Silva",
+    position: "Psicóloga Clínica",
+  },
+  {
+    review:
+      "Finalmente uma plataforma que entende as necessidades do psicólogo.",
+    name: "Dr. João Santos",
+    position: "Psicólogo Organizacional",
+  },
+  {
+    review:
+      "A plataforma encaixa perfeitamente na rotina do psicólogo. Simples e eficiente.",
+    name: "Dr. Lucas Puche",
+    position: "Psicólogo",
+  },
+];
 
 export function Reviews() {
   return (
@@ -8,23 +29,14 @@ export function Reviews() {
       </div>
 
       <div className="flex flex-wrap gap-8">
-        <ReviewsCard
-          review="Revolucionou completamente minha prática. A simplicidade é impressionante."
-          name="Dra. Maria Silva"
-          position="Psicóloga Clínica"
-        />
-
-        <ReviewsCard
-          review="Finalmente uma plataforma que entende as necessidades do psicólogo."
-          name="Dr. João Santos"
-          position="Psicólogo Organizacional"
-        />
-
-        <ReviewsCard
-          review="A plataforma encaixa perfeitamente na rotina do psicólogo. Simples e eficiente."
-          name="Dr. Lucas Puche"
-          position="Psicólogo"
-        />
+        {reviews.map((item, index) => (
+          <ReviewsCard
+            key={"review_card_" + index}
+            review={item.review}
+            name={item.name}
+            position={item.position}
+          />
+        ))}
       </div>
     </section>
   );
