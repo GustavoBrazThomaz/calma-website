@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
+import { motion } from "motion/react";
 
 interface Props {
   children: ReactNode;
@@ -9,14 +10,18 @@ interface Props {
 
 export function Button({ children, className, onClick }: Props) {
   return (
-    <button
+    <motion.button
+      whileHover={{
+        scale: 1.1,
+      }}
+      whileTap={{ scale: 0.9 }}
       className={twMerge(
-        "text-white p-2 w-full border border-white hover:bg-calma-secondary rounded-lg transition cursor-pointer",
+        "text-white p-2 w-full border border-white hover:bg-calma-secondary rounded-lg cursor-pointer",
         className
       )}
       onClick={onClick}
     >
       {children}
-    </button>
+    </motion.button>
   );
 }

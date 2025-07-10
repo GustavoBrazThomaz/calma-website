@@ -1,6 +1,9 @@
+"use client";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import { Divider } from "../components";
+import { motion } from "motion/react";
+import { fadeInLeftToRight, fadeInRightToLeft } from "../animations";
 
 export function ResourceSection() {
   return (
@@ -13,7 +16,7 @@ export function ResourceSection() {
       </div>
 
       <div className="flex space-y-4 justify-center gap-48 w-full mb-0">
-        <div className="space-y-12">
+        <motion.div {...fadeInLeftToRight} className="space-y-12">
           <div className="space-y-4">
             <p className="text-3xl">Prontuário Digital</p>
             <p className="text-xl max-w-sm text-gray-500">
@@ -35,28 +38,38 @@ export function ResourceSection() {
               automático na nuvem
             </li>
           </ul>
-        </div>
-        <div className="size-96 relative -top-12 p-6 bg-orange-300 rounded-4xl ">
+        </motion.div>
+        <motion.div
+          {...fadeInRightToLeft}
+          whileHover={{
+            scale: 1.1,
+          }}
+          className="size-96 relative -top-12 p-6 bg-orange-300 rounded-4xl "
+        >
           <Image
             className="rounded-4xl p-2 object-cover "
             src="https://images.pexels.com/photos/5699431/pexels-photo-5699431.jpeg"
             alt="camomila"
             layout="fill"
           />
-        </div>
+        </motion.div>
       </div>
       <Divider />
       <div className="flex space-y-4 justify-center gap-48 w-full -mt-24">
-        <div className="size-96 relative -top-12 p-6 bg-orange-300 rounded-4xl">
+        <motion.div
+          {...fadeInLeftToRight}
+
+          className="size-96 relative -top-12 p-6 bg-orange-300 rounded-4xl"
+        >
           <Image
             className="rounded-4xl p-2 object-cover "
             src="https://images.pexels.com/photos/196650/pexels-photo-196650.jpeg"
             alt="agenda"
             layout="fill"
           />
-        </div>
+        </motion.div>
 
-        <div className="space-y-12">
+        <motion.div {...fadeInRightToLeft} className="space-y-12">
           <div className="space-y-4">
             <p className="text-3xl">Agenda Inteligente</p>
             <p className="text-xl max-w-sm text-gray-500">
@@ -74,7 +87,7 @@ export function ResourceSection() {
               Reagendamento simplificado
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

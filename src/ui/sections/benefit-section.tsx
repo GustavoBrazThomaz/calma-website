@@ -1,5 +1,8 @@
+"use client";
 import { Clock, Shield, Users } from "lucide-react";
 import { BenefitCard } from "../components/benefit-card";
+import { motion } from "motion/react";
+import { fadeIn } from "../animations";
 
 const benefits = [
   {
@@ -26,15 +29,33 @@ export function BenefitSection() {
   return (
     <section className="pb-24 flex flex-col items-center space-y-32">
       <div className="text-center space-y-4 mt-24">
-        <h1 className="font-serif text-6xl ">Benefícios</h1>
-        <h2 className="text-2xl text-gray-500">
+        <motion.h1
+          {...fadeIn}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="font-serif text-6xl "
+        >
+          Benefícios
+        </motion.h1>
+        <motion.h2
+          {...fadeIn}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="text-2xl text-gray-500"
+        >
           Descubra como o Calma pode transformar sua prática profissional
-        </h2>
+        </motion.h2>
       </div>
 
       <div className="flex flex-wrap gap-8">
         {benefits.map((item, index) => (
-          <BenefitCard key={`benefit_${index}`} {...item} />
+          <motion.div
+            key={`benefit_${index}`}
+            initial={{ y: "-40px", opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: index * 0.3 }}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            <BenefitCard {...item} />
+          </motion.div>
         ))}
       </div>
     </section>
