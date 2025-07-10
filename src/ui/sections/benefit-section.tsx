@@ -1,5 +1,5 @@
 import { Clock, Shield, Users } from "lucide-react";
-import { BenefitCard } from "../components/BenefitCard";
+import { BenefitCard } from "../components/benefit-card";
 
 const benefits = [
   {
