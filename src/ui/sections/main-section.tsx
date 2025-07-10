@@ -9,7 +9,7 @@ export function MainSection() {
       </div>
       <div className="relative w-full flex justify-center">
         <Notebook />
-        <div className="h-2/3 rounded-[48px] w-[80%] absolute bottom-0 bg-orange-300" />
+        <div className="h-2/3 rounded-[48px] w-[80%] absolute bottom-0 bg-orange-300 shadow" />
       </div>
     </section>
   );

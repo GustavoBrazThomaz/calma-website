@@ -26,8 +26,8 @@ export function BenefitSection() {
   return (
     <section className="pb-24 flex flex-col items-center space-y-32">
       <div className="text-center space-y-4 mt-24">
-        <h1 className="font-serif text-6xl">Benefícios</h1>
-        <h2 className="text-2xl">
+        <h1 className="font-serif text-6xl ">Benefícios</h1>
+        <h2 className="text-2xl text-gray-500">
           Descubra como o Calma pode transformar sua prática profissional
         </h2>
       </div>

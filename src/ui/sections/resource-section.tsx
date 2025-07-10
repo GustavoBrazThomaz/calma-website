@@ -47,7 +47,7 @@ export function ResourceSection() {
       </div>
       <Divider />
       <div className="flex space-y-4 justify-center gap-48 w-full -mt-24">
-        <div className="size-96 relative -top-12 p-6 bg-orange-300 rounded-4xl ">
+        <div className="size-96 relative -top-12 p-6 bg-orange-300 rounded-4xl">
           <Image
             className="rounded-4xl p-2 object-cover "
             src="https://images.pexels.com/photos/196650/pexels-photo-196650.jpeg"

@@ -10,6 +10,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-open-sans);
   --font-serif: var(--font-play-fair-display);
+  --color-calma-orange: #f5b17b;
+  --color-calma-primary: #4e709d;
+  --color-calma-secondary: #89a4c7;
+  --color-calma-grey: #cdd5e0;
 }
 
 body {

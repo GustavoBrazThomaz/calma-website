@@ -8,7 +8,7 @@ interface Props {
 
 export function ReviewsCard({ review, name, position }: Props) {
   return (
-    <div className="max-w-xs flex flex-col justify-center-center p-4 rounded-2xl border-6 border-orange-300">
+    <div className="max-w-xs flex flex-col justify-center-center p-4 rounded-2xl shadow">
       <div className="flex justify-end w-full text-orange-300">
         {Array.from({ length: 5 }).map((_, index) => (
           <Star
