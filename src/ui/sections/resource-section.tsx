@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { fadeInLeftToRight, fadeInRightToLeft } from "../animations";
-import { SectionDivider } from "../components/section-divider";
+import { Divider } from "../components/divider";
 
 export function ResourceSection() {
   return (
@@ -55,7 +55,7 @@ export function ResourceSection() {
           />
         </motion.div>
       </div>
-      <SectionDivider />
+      <Divider />
       <div className="flex space-y-4 justify-center gap-48 w-full -mt-24">
         <motion.div
           {...fadeInLeftToRight}

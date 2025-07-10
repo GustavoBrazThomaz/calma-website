@@ -1,5 +1,5 @@
 import { AppBar } from "@/ui/components/app-bar";
-import { SectionDivider } from "@/ui/components/section-divider";
+import { Divider } from "@/ui/components/divider";
 import { BenefitSection } from "@/ui/sections/benefit-section";
 import { Footer } from "@/ui/sections/footer";
 import { MainSection } from "@/ui/sections/main-section";
@@ -13,11 +13,11 @@ export default function Home() {
       <div className="px-8 py-4">
         <AppBar />
         <MainSection />
-        <SectionDivider />
+        <Divider />
         <BenefitSection />
-        <SectionDivider />
+        <Divider />
         <ResourceSection />
-        <SectionDivider />
+        <Divider />
         <Reviews />
       </div>
       <ReadySection />
