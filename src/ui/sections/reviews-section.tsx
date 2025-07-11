@@ -23,9 +23,11 @@ const reviews = [
 
 export function Reviews() {
   return (
-    <section className="pb-24 flex flex-col items-center space-y-24">
+    <section className="pb-24 flex flex-col items-center space-y-24 max-sm:space-y-8 max-sm:pb-12 max-sm:-mt-12">
       <div className="text-center space-y-4 mt-24">
-        <h1 className="text-4xl font-serif">O que dizem nossos usuários</h1>
+        <h1 className="text-4xl max-sm:text-3xl font-serif">
+          O que dizem nossos usuários
+        </h1>
       </div>
 
       <div className="flex flex-wrap gap-8">

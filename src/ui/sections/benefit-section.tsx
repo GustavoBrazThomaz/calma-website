@@ -27,19 +27,19 @@ const benefits = [
 
 export function BenefitSection() {
   return (
-    <section className="pb-24 flex flex-col items-center space-y-32">
+    <section className="pb-24 flex flex-col items-center space-y-32 max-sm:space-y-8 max-sm:pb-12 max-sm:-mt-16">
       <div className="text-center space-y-4 mt-24">
         <motion.h1
           {...fadeIn}
           transition={{ duration: 1, delay: 0.2 }}
-          className="font-serif text-6xl "
+          className="font-serif text-6xl max-sm:text-4xl"
         >
           Benefícios
         </motion.h1>
         <motion.h2
           {...fadeIn}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-2xl text-gray-500"
+          className="text-2xl text-gray-500 max-sm:text-xl"
         >
           Descubra como o Calma pode transformar sua prática profissional
         </motion.h2>
