@@ -5,7 +5,7 @@ import MacBook from "../components/mac-book";
 
 export function MainSection() {
   return (
-    <section className="flex flex-col items-center justify-center h-dvh gap-16  w-full">
+    <section className="flex flex-col items-center justify-center h-dvh gap-16 max-sm:gap-6 w-full">
       <div className="space-y-4 text-center">
         <motion.h1
           initial={{ opacity: 0 }}
@@ -34,7 +34,7 @@ export function MainSection() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true, amount: 0.5 }}
-          className="h-2/3 rounded-[48px] w-[80%] max-sm:w-full absolute bottom-0 bg-orange-300 shadow"
+          className="h-2/3 max-sm:h-2/4 rounded-[48px] w-[80%] max-sm:w-full absolute bottom-0 bg-orange-300 shadow"
         />
       </div>
     </section>
