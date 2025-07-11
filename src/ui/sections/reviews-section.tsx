@@ -16,7 +16,7 @@ const reviews = [
   {
     review:
       "A plataforma encaixa perfeitamente na rotina do psicólogo. Simples e eficiente.",
-    name: "Dr. Lucas Puche",
+    name: "Dr. Lucas Barbosa Puche",
     position: "Psicólogo",
   },
 ];
