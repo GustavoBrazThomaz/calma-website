@@ -9,7 +9,7 @@ export default function MacBook() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, delay: 1 }}
       viewport={{ once: true, amount: 0.5 }}
-      className="border-2 border-b-0 border-gray-300 rounded-t-[26px] z-10  w-[772px] h-[452px] shadow"
+      className="border-2 border-b-0 border-gray-300 rounded-t-[26px] z-10 w-[772px] h-[452px] shadow max-sm:hidden"
     >
       <div className="relative w-[768px] h-[450px] border-16 border-b-0 rounded-t-3xl bg-black">
         <div className="h-6 w-full bg-[#3E3635] rounded-t-xl flex justify-between">
