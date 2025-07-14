@@ -17,13 +17,11 @@ export const metadata: Metadata = {
   description:
     "Calma é um app para psicólogos organizarem suas consultas, pacientes e anotações clínicas. Use com calma — foi feito pra isso.",
   openGraph: {
-    images:
-      "https://images.pexels.com/photos/18183301/pexels-photo-18183301.jpeg",
+    images: "/assets/calma.png",
   },
   twitter: {
     card: "summary_large_image",
-    images:
-      "https://images.pexels.com/photos/18183301/pexels-photo-18183301.jpeg",
+    images: "/assets/calma.png",
   },
 };
 
