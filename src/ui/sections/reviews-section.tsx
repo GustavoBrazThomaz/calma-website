@@ -30,7 +30,7 @@ export function Reviews() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap gap-8">
+      <div className="flex flex-wrap gap-8 max-xl:justify-center">
         {reviews.map((item, index) => (
           <ReviewsCard
             key={"review_card_" + index}

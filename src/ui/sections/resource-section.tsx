@@ -16,11 +16,11 @@ export function ResourceSection() {
         </h2>
       </div>
 
-      <div className="flex max-sm:gap-8 max-sm:flex-col max-sm:items-center space-y-4 justify-center gap-48 w-full mb-0">
+      <div className="flex max-sm:gap-8 max-sm:flex-col max-xl:gap-8 max-sm:items-center space-y-4 justify-center gap-48 w-full mb-0">
         <motion.div {...fadeInLeftToRight} className="space-y-12">
           <div className="space-y-4 text-center">
             <p className="text-3xl max-sm:text-2xl">Prontuário Digital</p>
-            <p className="text-xl max-sm:text-lg text-gray-500">
+            <p className="text-xl max-w-sm max-sm:text-lg text-gray-500">
               Registre sessões, evolução e observações de forma organizada e
               totalmente segura.
             </p>
@@ -56,7 +56,7 @@ export function ResourceSection() {
         </motion.div>
       </div>
       <Divider />
-      <div className="flex max-sm:flex-col-reverse max-sm:gap-8 max-sm:items-center space-y-4 justify-center gap-48 w-full -mt-24 max-sm:-mt-4">
+      <div className="flex max-sm:flex-col-reverse max-sm:gap-8 max-xl:gap-8 max-sm:items-center space-y-4 justify-center gap-48 w-full -mt-24 max-sm:-mt-4">
         <motion.div
           {...fadeInLeftToRight}
           className="size-96 max-sm:size-72 max-sm:-top-4 relative -top-12 p-6 bg-orange-300 rounded-4xl"

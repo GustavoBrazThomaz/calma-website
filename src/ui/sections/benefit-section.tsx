@@ -45,7 +45,7 @@ export function BenefitSection() {
         </motion.h2>
       </div>
 
-      <div className="flex flex-wrap gap-8">
+      <div className="flex flex-wrap max-xl:justify-center gap-8">
         {benefits.map((item, index) => (
           <motion.div
             key={`benefit_${index}`}
