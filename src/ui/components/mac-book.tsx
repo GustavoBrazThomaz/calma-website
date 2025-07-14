@@ -21,7 +21,7 @@ export default function MacBook() {
         </div>
         <div className="relative w-full h-full">
           <Image
-            layout="fill"
+            fill
             src={"/assets/calma-dashboard.png"}
             alt="calma-dashboard"
             className=" pointer-events-none object-contain -mt-[12.3px]"

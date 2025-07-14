@@ -65,7 +65,7 @@ export function ResourceSection() {
             className="rounded-4xl p-2 object-cover "
             src="https://images.pexels.com/photos/196650/pexels-photo-196650.jpeg"
             alt="agenda"
-            layout="fill"
+            fill
           />
         </motion.div>
 
