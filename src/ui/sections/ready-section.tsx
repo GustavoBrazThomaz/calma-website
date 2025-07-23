@@ -13,7 +13,7 @@ export function ReadySection() {
       <Button
         className="max-w-sm"
         onClick={() =>
-          (window.location.href = "https://calma-seven.vercel.app/")
+          (window.location.href = "https://calma-dashboard.vercel.app")
         }
       >
         Começar teste gratuito
